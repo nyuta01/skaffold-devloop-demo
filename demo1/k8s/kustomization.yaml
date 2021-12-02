@@ -1,0 +1,9 @@
+namespace: demo1
+commonLabels:
+  skaffold.dev/run-id: static
+  skaffold.dev/docker-api-version: static
+  app.kubernetes.io/managed-by: skaffold
+  skaffold.dev/tag-policy: static
+resources:
+  - namespace.yaml
+  - pod.yaml

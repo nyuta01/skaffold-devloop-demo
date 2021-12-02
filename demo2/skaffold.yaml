@@ -1,0 +1,27 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+build:
+  artifacts:
+    - image: temp/demo2
+      kaniko:
+        cache: {}
+  googleCloudBuild: {}
+deploy:
+  kustomize:
+    paths:
+      - k8s
+profiles:
+  - name: dev
+    activation:
+      - command: dev
+    patches:
+      - op: replace
+        path: /build/artifacts/0
+        value:
+          image: temp/demo2
+          docker:
+            target: dev
+          sync:
+            manual:
+              - src: "**/*.go"
+                dest: .
