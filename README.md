@@ -1,4 +1,6 @@
 # README
+https://github.com/GoogleContainerTools/skaffold/pull/6934
+
 
 ```
 $ skaffold dev -d $DEFAULT_REPO
