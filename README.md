@@ -6,7 +6,7 @@ $ skaffold dev -d $DEFAULT_REPO
 
 ## Logs
 
-skaffold v1.35.0
+skaffold v1.35.0. 
 https://github.com/GoogleContainerTools/skaffold/tree/v1.35.0
 
 ```
@@ -25,7 +25,7 @@ WARN[0016] Skipping deploy due to sync error:copying files: didn't sync any file
 Watching for changes...
 ```
 
-skaffold PR version
+skaffold PR version. 
 https://github.com/nyuta01/skaffold/pull/1
 
 ```
